@@ -10,7 +10,7 @@ A modern, fully containerized **two-tier Spring Boot web application** with inte
 
 ---
 
-## 📋 Table of Contents
+##  Table of Contents
 
 - [Project Overview](#project-overview)
 - [Tech Stack](#tech-stack)
@@ -35,22 +35,22 @@ A modern, fully containerized **two-tier Spring Boot web application** with inte
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 **PGTools** is a comprehensive web application built with Spring Boot 3.5.3 that demonstrates enterprise-level containerization practices. This project implements a complete end-to-end Docker setup with two independent containers communicating through a custom Docker bridge network.
 
 ### Key Highlights:
-- ✅ **Two-Tier Architecture**: Application tier + Database tier
-- ✅ **Multi-Stage Docker Build**: Optimized image size and security
-- ✅ **Docker Compose Orchestration**: Single command deployment
-- ✅ **Custom Bridge Network**: Secure container communication
-- ✅ **Health Checks**: Database readiness monitoring
-- ✅ **Volume Persistence**: Data durability across container restarts
-- ✅ **Maven Build Integration**: Automated compilation and packaging
+- **Two-Tier Architecture**: Application tier + Database tier
+- **Multi-Stage Docker Build**: Optimized image size and security
+- **Docker Compose Orchestration**: Single command deployment
+- **Custom Bridge Network**: Secure container communication
+- **Health Checks**: Database readiness monitoring
+- **Volume Persistence**: Data durability across container restarts
+- **Maven Build Integration**: Automated compilation and packaging
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Version | Purpose |
 |-----------|---------|---------|
@@ -66,7 +66,7 @@ A modern, fully containerized **two-tier Spring Boot web application** with inte
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -93,28 +93,28 @@ A modern, fully containerized **two-tier Spring Boot web application** with inte
 
 ---
 
-## ✨ Features
+## Features
 
 ### Application Features:
-- 📱 **Responsive Web UI** - Built with Thymeleaf templates and Bootstrap
-- 🔐 **Data Validation** - Spring Validation framework
-- 📊 **RESTful APIs** - Web services for data operations
-- 📧 **Email Service** - SMTP integration with Gmail
-- 💾 **JPA ORM** - Hibernate-based data persistence
-- 📈 **Application Metrics** - Spring Boot Actuator
-- 🗄️ **Large File Support** - Multipart uploads up to 1GB
+- **Responsive Web UI** - Built with Thymeleaf templates and Bootstrap
+- **Data Validation** - Spring Validation framework
+- **RESTful APIs** - Web services for data operations
+- **Email Service** - SMTP integration with Gmail
+- **JPA ORM** - Hibernate-based data persistence
+- **Application Metrics** - Spring Boot Actuator
+- **Large File Support** - Multipart uploads up to 1GB
 
 ### Docker Features:
-- 🐳 **Multi-Stage Builds** - Optimized production images
-- 🔗 **Custom Bridge Network** - Inter-container communication
-- 💾 **Volume Persistence** - MySQL data durability
-- 🏥 **Health Checks** - Container readiness monitoring
-- ♻️ **Auto Restart** - Fault tolerance with restart policies
-- 🔌 **Port Mapping** - Flexible port configuration
+- **Multi-Stage Builds** - Optimized production images
+- **Custom Bridge Network** - Inter-container communication
+- **Volume Persistence** - MySQL data durability
+- **Health Checks** - Container readiness monitoring
+- **Auto Restart** - Fault tolerance with restart policies
+- **Port Mapping** - Flexible port configuration
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -134,29 +134,12 @@ Before you begin, ensure you have the following installed:
 
 ### Installation Commands:
 
-**macOS (using Homebrew):**
-```bash
-brew install java17
-brew install maven
-brew install mysql
-brew install --cask docker
-```
-
 **Ubuntu/Debian:**
 ```bash
 sudo apt-get update
 sudo apt-get install openjdk-17-jdk maven mysql-server
 sudo apt-get install docker.io docker-compose
 ```
-
-**Windows (using Chocolatey):**
-```bash
-choco install openjdk17
-choco install maven
-choco install mysql
-choco install docker-desktop
-```
-
 ---
 
 ## 📁 Project Structure
@@ -207,7 +190,7 @@ springboot-app/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Option 1: Local Development Setup
 
@@ -247,7 +230,7 @@ Access the application at: **http://localhost:8080**
 
 ---
 
-### Option 2: Docker Compose Setup (⭐ Recommended)
+### Option 2: Docker Compose Setup (Recommended)
 
 This is the easiest way to run the entire two-tier application with a single command.
 
@@ -445,7 +428,7 @@ spring.servlet.multipart.file-size-threshold=1000000KB
 # SMTP Server (Gmail)
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
-spring.mail.username=pgtoolsindiapvtltd@gmail.com
+spring.mail.username=pgtools@gmail.com
 spring.mail.password=fqqi shij ttnf jsfc
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
@@ -501,7 +484,7 @@ SHOW TABLES;
 
 ---
 
-## 📚 API Documentation
+## API Documentation
 
 ### Available Endpoints
 
@@ -528,7 +511,7 @@ View the `restController/` directory in the source code for available REST endpo
 
 ---
 
-## 🐳 Docker Deep Dive
+## Docker Deep Dive
 
 ### Multi-Stage Build Process
 
@@ -662,7 +645,7 @@ docker volume ls
 # Inspect volume
 docker volume inspect mysql-data
 
-# Remove volume (⚠️ Deletes data)
+# Remove volume ( Deletes data)
 docker volume rm mysql-data
 
 # Backup data
@@ -707,7 +690,7 @@ docker inspect --format='{{json .State.Health}}' mysql | jq .
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Issue: Application fails to connect to MySQL
 
@@ -832,7 +815,7 @@ docker system prune -a
 
 ---
 
-## 📊 Docker Commands Reference
+## Docker Commands Reference
 
 ### Container Management
 
@@ -902,7 +885,7 @@ docker-compose exec service_name command
 
 ---
 
-## 🌐 Environment Variables
+## Environment Variables
 
 ### For Docker Deployment
 
@@ -929,7 +912,7 @@ export SPRING_DATASOURCE_PASSWORD=your_password
 
 ---
 
-## 📦 Maven Build
+## Maven Build
 
 ### Common Maven Commands
 
@@ -961,7 +944,7 @@ export SPRING_DATASOURCE_PASSWORD=your_password
 
 ---
 
-## 📝 Dependencies
+## Dependencies
 
 Core dependencies used in this project:
 
@@ -986,7 +969,7 @@ See `pom.xml` for complete dependency list and versions.
 
 ---
 
-## 🚀 Deployment Best Practices
+## Deployment Best Practices
 
 ### Pre-Deployment Checklist
 
@@ -1013,38 +996,11 @@ docker-compose -f docker-compose.prod.yml up -d
 ```
 
 ---
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is open source and available for educational and reference purposes.
-
----
-
 ## 👤 Author
 
 **Pratik Chaudhari**
 - GitHub: [@pratikk-devops](https://github.com/pratikk-devops)
 - Docker Hub: [@pratikchaudhari555](https://hub.docker.com/u/pratikchaudhari555)
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-1. Check the [Troubleshooting](#troubleshooting) section
-2. Review Docker Compose configuration
-3. Check application logs
-4. Open an issue on GitHub
 
 ---
 
@@ -1071,11 +1027,3 @@ For issues, questions, or suggestions:
 - **Test Coverage**: Unit tests included
 
 ---
-
-**Last Updated**: November 17, 2025
-
-**Version**: 1.0.0
-
----
-
-> ⭐ If this project helped you, please consider giving it a star on GitHub!
