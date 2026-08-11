@@ -1,5 +1,4 @@
 #- Dockerized Full‑Stack Spring Boot Application — End‑to‑End Web App
-
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.5.3-brightgreen?logo=spring-boot)
 ![Java](https://img.shields.io/badge/Java-17-red?logo=java)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-blue?logo=mysql)
@@ -1025,5 +1024,5 @@ docker-compose -f docker-compose.prod.yml up -d
 - **JDK Version**: 17+
 - **Lines of Code**: Custom implementation
 - **Test Coverage**: Unit tests included
-
+- **Title**: Dockerized Spring Boot Full‑Stack App 
 ---
